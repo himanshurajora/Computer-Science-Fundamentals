@@ -3,7 +3,6 @@
  * 
  * @param {number} current The current number provided
  * @param {number} max the max number provided
- * @returns 
  */
 
 function basicRecursion(current, max){
