@@ -1,8 +1,15 @@
 
+/* -------------------------------------------------------------------------- */
+/*                          BinaryTree Implementation                         */
+/* -------------------------------------------------------------------------- */
+
 /** Class representing a binary tree */
 
 class BinaryTree {
-
+/**
+ * 
+ * @param {number} value value to assign in constructor 
+ */
     constructor(value) {
         this.value = value
         this.left = null
@@ -36,7 +43,7 @@ class BinaryTree {
         if (tree.value === value) { return true }
 
         return (tree.left && tree.left.contains(value, this.left) ? true : false) ||
-        (tree.right && tree.right.contains(value, tree.right)? true : false)
+            (tree.right && tree.right.contains(value, tree.right) ? true : false)
 
     }
 }
