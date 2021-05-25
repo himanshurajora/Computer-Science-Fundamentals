@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Recursion.js - Documentation</title>
+    <title>TreeExample.js - Documentation</title>
 
     <script src="scripts/prettify/prettify.js"></script>
     <script src="scripts/prettify/lang-css.js"></script>
@@ -29,7 +29,7 @@
 
 <div id="main">
     
-    <h1 class="page-title">Recursion.js</h1>
+    <h1 class="page-title">TreeExample.js</h1>
     
 
     
@@ -39,20 +39,39 @@
     
     <section>
         <article>
-            <pre class="prettyprint source linenums"><code>
-/**
+            <pre class="prettyprint source linenums"><code>/**
+ * @author Himanshu Jangid 
+ * @himanshurajora
+ * @summary
+ * Chatbot Tree
  * 
- * @param {number} current The current number provided
- * @param {number} max the max number provided
  */
+class Chatbot{
+    /** 
+     * @param {string} question 
+     */
+    constructor(question){
+        this.question = question
+        this.yes = null
+        this.no = null
+    }
 
-function basicRecursion(current, max){
-    if(current > max) return
-    console.log(current)
-    basicRecursion(current + 1, max)
+    /**
+     * 
+     * @param {number} value value for the new node to add
+     * @returns {Tree} the new tree formed by insertion  
+     */
+
+    insertChild(question, side){
+        const newQuestion = new Tree(question);
+        this[side] = side;
+        return newQuestion;
+    }
+
 }
 
-basicRecursion(1,5)</code></pre>
+
+</code></pre>
         </article>
     </section>
 

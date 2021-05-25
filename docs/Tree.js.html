@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Recursion.js - Documentation</title>
+    <title>Tree.js - Documentation</title>
 
     <script src="scripts/prettify/prettify.js"></script>
     <script src="scripts/prettify/lang-css.js"></script>
@@ -29,7 +29,7 @@
 
 <div id="main">
     
-    <h1 class="page-title">Recursion.js</h1>
+    <h1 class="page-title">Tree.js</h1>
     
 
     
@@ -39,20 +39,58 @@
     
     <section>
         <article>
-            <pre class="prettyprint source linenums"><code>
+            <pre class="prettyprint source linenums"><code>/**
+ * @author Himanshu Jangid 
+ * @himanshurajora
+ * @example Class Representing a Basic Tree
+ */
+class Tree {
+    /** 
+     * @param {string} value 
+     */
+    constructor(value) {
+        this.value = value
+        this.children = [];
+    }
+
 /**
- * 
- * @param {number} current The current number provided
- * @param {number} max the max number provided
+ *  @summary Takes a tree as a parameter and traverses all trough that tree from top to bottom
+ * @param {Tree} tree
  */
 
-function basicRecursion(current, max){
-    if(current > max) return
-    console.log(current)
-    basicRecursion(current + 1, max)
+    traverse(tree = this) {
+        console.log(tree.value)
+        tree.children.forEach((val) => {
+            this.traverse(val)
+        })
+    }
+    /**
+     * 
+     * @param {number} value value for the new node to add
+     * @returns {Tree} the new tree formed by insertion  
+     */
+
+    insertChild(value) {
+        const newTree = new Tree(value);
+        this.children.push(newTree)
+        return this;
+    }
+
 }
 
-basicRecursion(1,5)</code></pre>
+
+
+
+var tree = new Tree(12)
+tree.insertChild(13)
+tree.insertChild(14)
+tree.children[0].insertChild(20)
+
+tree.traverse()
+
+
+
+</code></pre>
         </article>
     </section>
 
