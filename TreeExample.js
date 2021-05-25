@@ -5,7 +5,7 @@
  * Chatbot Tree
  * 
  */
-class Tree{
+class Chatbot{
     /** 
      * @param {string} question 
      */
