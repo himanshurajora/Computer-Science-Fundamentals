@@ -27,7 +27,7 @@ searchingstring manipulationsearchingregular expressionCodelandfree
 function UsernameValidation(str) {  
     if (str.length >= 4 && str.length <= 25) {
         if (!isNaN(parseInt(str[0]))) {
-            if (/^[a-zA-Z][a-zA-Z1-9_]*[^_]$/.test(str)) {
+            if (/^[A-Za-z]\w+[A-Za-z0-9]$/.test(str)) {
                 return true;
             }
         }
