@@ -2,9 +2,7 @@
 /* -------------------------------------------------------------------------- */
 /*                          BinaryTree Implementation                         */
 /* -------------------------------------------------------------------------- */
-
 /** Class representing a binary tree */
-
 class BinaryTree {
 /**
  * 
@@ -55,3 +53,15 @@ tree.left.left = new BinaryTree(9)
 
 tree.traverse()
 console.log(tree.contains(10))
+
+
+
+
+
+
+
+
+
+
+
+
