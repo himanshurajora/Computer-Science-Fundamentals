@@ -53,7 +53,7 @@ class Node{
         this.left = left
         this.right = right
     }
-
+ 
     add(value){
         if(value < this.value){
             // go left
