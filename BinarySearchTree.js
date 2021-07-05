@@ -14,7 +14,6 @@ class Tree{
      * @param {number} value new value to add into the tree 
      * @returns {number}  1 if done 
      */
-
     add(value){
         if(this.root === null){
             this.root = new Node(value)
@@ -68,4 +67,4 @@ class Node{
             // go right
         }
     }
-}
+}   
