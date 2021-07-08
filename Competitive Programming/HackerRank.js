@@ -24,8 +24,10 @@ function secondLarge(arr) {
     return secondMax;
 }
 
-var arr = [1213,514,51,1415,1513,131,1315,1314,145,5,24];
-console.log(secondLarge(arr))
+// var arr = [1213,514,51,1415,1513,131,1315,1314,145,5,24];
+// console.log(secondLarge(arr))
+
+
 
 
 
