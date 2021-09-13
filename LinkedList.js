@@ -13,7 +13,7 @@ class LinkedList{
     }
 
 }
-
+ 
 function traverse(List){
     console.log(List.next)
     while(List != null){
